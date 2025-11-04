@@ -5,141 +5,258 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header> 
-        <h1>Introdução</h1>
-        <a href="./index.html">Voltar</a>
+    <header>
+        <h1 class="">HTML</h1>
+        <a class="btns" href="../index.html">Voltar</a>
     </header>
     <main>
+        <div>
+            <h2>significado de HTML</h2>
+            <p> → HyperText Markup Language (Linguagem de Marcação de Hypertexto).</p>
+            <li class="none">
+                <ol>Linguagem: Forma de comunicação. No nosso caso, entre o programador e o navegador de Internet
+                    (Google
+                    Chrome, Firefox, Safari, Edge, Internet Explorer…)</ol>
+                <ol>Marcação: O HTML 'marca' o que é o que em uma página. Ele que vai dizer o que é um texto, o que é
+                    uma
+                    imagem, um vídeo e assim por diante.</ol>
+                <ol>Hypertexto: Hypertexto faz referência a escritá gráfica, sintetizando, é um nome bonito para site.
+                </ol>
+            </li>
+
+            <p>Resumindo…HTML é a tecnologia que fala o que é cada item em uma página de internet / um site. E ele fez
+                isso
+                por meio de TAG's.</p>
+            <p>TAG's ? Tag's são etiquetas. São os trechos de código que nos ajudam a falar o que é o que em uma página.
+            </p>
+
+
+            <h3>Exemplo de TAG's.</h3>
+
+            <img src="../img/tagsExemplo.png" alt="exemplo de tags">
+
+        </div>
+        <div id="tags">
+            <h1>Principais Tags HTML</h1>
+
+            <p>Aqui vou mostrar algumas tags importantes do HTML, com explicações e exemplos práticos.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="100"
+                alt="Logo HTML5">
+
+            <h2>&lt;html&gt;</h2>
+            <p>É a tag raiz que envolve toda a página HTML.</p>
+
+            <h2>&lt;head&gt;</h2>
+            <p>Contém informações sobre a página, como título e dados de configuração.</p>
+
+            <h2>&lt;title&gt;</h2>
+            <p>Define o título da página que aparece na aba do navegador.</p>
+
+            <h2>&lt;body&gt;</h2>
+            <p>Contém todo o conteúdo visível da página, como textos, imagens e links.</p>
+
+            <nav>
+                <p><strong>Exemplo de Navegação:</strong></p>
+                <a href="#textos">Textos</a> |
+                <a href="#listas">Listas</a> |
+                <a href="#mídia">Mídia</a> |
+                <a href="#tabelas">Tabelas</a> |
+                <a href="#formulários">Formulários</a> |
+                <a href="#semantica">Semântica</a>
+            </nav>
+        </div>
+
         
-        <h2>HTML significa:</h2>
-        <p>→ HyperText Markup Language (Linguagem de Marcação de Hypertexto).</p>
-        <li>
-            <ol>Linguagem: Forma de comunicação. No nosso caso, entre o programador e o navegador de Internet (Google
-                Chrome, Firefox, Safari, Edge, Internet Explorer…)</ol>
-            <ol>Marcação: O HTML 'marca' o que é o que em uma página. Ele que vai dizer o que é um texto, o que é uma
-                imagem, um vídeo e assim por diante.</ol>
-            <ol>Hypertexto: Hypertexto faz referência a escritá gráfica, sintetizando, é um nome bonito para site.</ol>
-        </li>
+        <main>
+            <section id="textos">
+                <h2>1. Tags de Texto</h2>
 
-        <p>Resumindo…HTML é a tecnologia que fala o que é cada item em uma página de internet / um site. E ele fez isso
-            por meio de TAG's.</p>
-        <p>TAG's ? Tag's são etiquetas. São os trechos de código que nos ajudam a falar o que é o que em uma página.</p>
+                <h3>&lt;h1&gt; a &lt;h6&gt;</h3>
+                <p>Usadas para títulos, indo do mais importante (<code>h1</code>) ao menos importante (<code>h6</code>).
+                </p>
 
+                <h1>Título H1</h1>
+                <h2>Título H2</h2>
+                <h3>Título H3</h3>
+                <h4>Título H4</h4>
+                <h5>Título H5</h5>
+                <h6>Título H6</h6>
 
-        <h3>Exemplo de TAG's.</h3>
+                <h3>&lt;p&gt;</h3>
+                <p>Cria parágrafos de texto. Exemplo:</p>
+                <p>HTML é a linguagem usada para estruturar páginas da web.</p>
 
-        <img src="../img/tagsExemplo.png" alt="exemplo de tags">
+                <h3>&lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;mark&gt;</h3>
+                <p><strong>strong</strong> dá ênfase forte, <em>em</em> dá ênfase leve, <b>b</b> deixa em negrito,
+                    <i>i</i> em itálico, <u>u</u> sublinha, e <mark>mark</mark> destaca com marca-texto.</p>
 
-        <h1>Principais Tags HTML</h1>
-        <p>Esta página mostra algumas das tags mais usadas no HTML com explicações e exemplos práticos.</p>
+                <h3>&lt;small&gt;, &lt;sub&gt;, &lt;sup&gt;</h3>
+                <p><small>Texto menor com &lt;small&gt;</small>, fórmula H<sub>2</sub>O e expoente 10<sup>2</sup> = 100.
+                </p>
 
-        <h2>&lt;html&gt;</h2>
-        <p>É a tag raiz que envolve toda a página HTML.</p>
+                <h3>&lt;br&gt; e &lt;hr&gt;</h3>
+                <p>O &lt;br&gt; quebra a linha,<br>como este exemplo.<br>O &lt;hr&gt; cria uma linha horizontal abaixo.
+                </p>
+                <hr>
 
-        <h2>&lt;head&gt;</h2>
-        <p>Contém informações sobre a página, como título e dados de configuração.</p>
+                <h3>&lt;blockquote&gt; e &lt;pre&gt;</h3>
+                <p><strong>blockquote</strong> exibe uma citação:</p>
+                <blockquote>"A simplicidade é a sofisticação máxima." – Leonardo da Vinci</blockquote>
 
-        <h2>&lt;title&gt;</h2>
-        <p>Define o título da página que aparece na aba do navegador.</p>
+                <p><strong>pre</strong> mantém o espaçamento e quebras de linha:</p>
+                <pre>
+                                    for i in range(5):
+                                        console.log("HTML é legal!")
+            </pre>
 
-        <h2>&lt;body&gt;</h2>
-        <p>Contém todo o conteúdo visível da página, como textos, imagens e links.</p>
+                <h3>&lt;abbr&gt;</h3>
+                <p>Usada para abreviações. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+            </section>
 
-        <h2>&lt;h1&gt; a &lt;h6&gt;</h2>
-        <p>Tags de título, de <code>&lt;h1&gt;</code> (mais importante) até <code>&lt;h6&gt;</code> (menos importante).
-        </p>
+            <hr>
 
-        <h2>&lt;p&gt;</h2>
-        <p>Usada para criar parágrafos de texto.</p>
+            <section id="listas">
+                <h2>2. Listas</h2>
 
-        <h2>&lt;br&gt;</h2>
-        <p>Insere uma quebra de linha.<br>Exemplo: este texto está na linha seguinte.</p>
+                <h3>&lt;ul&gt; e &lt;li&gt;</h3>
+                <p>Cria listas não ordenadas:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
 
-        <h2>&lt;hr&gt;</h2>
-        <p>Insere uma linha horizontal para separar seções.</p>
+                <h3>&lt;ol&gt; e &lt;li&gt;</h3>
+                <p>Cria listas ordenadas:</p>
+                <ol>
+                    <li>Introdução</li>
+                    <li>Estrutura</li>
+                    <li>Tags principais</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <section id="mídia">
+                <h2>3. Tags de Mídia</h2>
+
+                <h3>&lt;img&gt;</h3>
+                <p>Insere uma imagem:</p>
+                <img src="../img/imgexemplo.png" alt="Imagem de exemplo">
+
+                <h3>&lt;audio&gt;</h3>
+                <p>Insere áudio:</p>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+
+                <h3>&lt;video&gt;</h3>
+                <p>Insere vídeo:</p>
+                <video width="300" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+
+                <h3>&lt;iframe&gt;</h3>
+                <p>Incorpora outra página da web:</p>
+                
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/YIYsf9AMZxE?si=B87xzRjg1hKZXear" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <hr>
+
+            <section id="tabelas">
+                <h2>4. Tabelas</h2>
+                <p>Exemplo com &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;:</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>25</td>
+                        <td>Rio de Janeiro</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                        <td>São Paulo</td>
+                    </tr>
+                </table>
+            </section>
+
+            <hr>
+
+            <section id="formulários">
+                <h2>5. Formulários</h2>
+                <form>
+                    <label>Nome: <input type="text" placeholder="Digite seu nome"></label><br>
+                    <label>Email: <input type="email" placeholder="Digite seu email"></label><br>
+                    <label>Senha: <input type="password" placeholder="Digite sua senha"></label><br>
+                    <label>Escolha uma cor: <input type="color"></label><br>
+                    <label>Idade: <input type="number" min="1" max="100"></label><br>
+                    <label>Data de nascimento: <input type="date"></label><br>
+                    <label>Arquivo: <input type="file"></label><br>
+                    <label>Sexo:
+                        <input type="radio" name="sexo"> Masculino
+                        <input type="radio" name="sexo"> Feminino
+                    </label><br>
+                    <label>Interesses:
+                        <input type="checkbox"> HTML
+                        <input type="checkbox"> CSS
+                        <input type="checkbox"> JS
+                    </label><br>
+                    <textarea rows="3" cols="30" placeholder="Escreva algo..."></textarea><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+            </section>
+
+            <hr>
+
+            <section id="semantica">
+                <h2>6. Tags Semânticas</h2>
+
+                <h3>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;</h3>
+                <p>Essas tags ajudam na organização semântica do conteúdo.</p>
+
+                <article>
+                    <h3>Exemplo de Artigo</h3>
+                    <p>O HTML5 trouxe novas tags semânticas para tornar o conteúdo mais acessível.</p>
+                </article>
+
+                <aside>
+                    <p>Conteúdo relacionado (como uma barra lateral).</p>
+                </aside>
+
+                <h3>&lt;progress&gt; e &lt;meter&gt;</h3>
+                <p>Indicadores de progresso e medição:</p>
+                <progress value="70" max="100"></progress> Progresso 70%<br>
+                <meter value="0.6">60%</meter> 60%
+
+                <h3>&lt;details&gt; e &lt;summary&gt;</h3>
+                <p>Cria uma seção que pode ser expandida:</p>
+                <details>
+                    <summary>Clique para ver mais</summary>
+                    <p>Essas tags são úteis para esconder detalhes até que o usuário queira ver.</p>
+                </details>
+            </section>
+        </main>
+
         <hr>
 
-        <h2>&lt;strong&gt; e &lt;em&gt;</h2>
-        <p><code>&lt;strong&gt;</code> dá ênfase forte (negrito) e <code>&lt;em&gt;</code> dá ênfase (itálico).</p>
-        <p>Exemplo: <strong>Texto em negrito</strong> e <em>texto em itálico</em>.</p>
-
-        <h2>&lt;a&gt;</h2>
-        <p>Cria links para outras páginas ou locais da web.</p>
-        <p>Exemplo: <a href="https://www.google.com" target="_blank">Visitar o Google</a></p>
-
-        <h2>&lt;img&gt;</h2>
-        <p>Insere imagens na página. Usa o atributo <code>src</code> para definir o caminho da imagem.</p>
-        <img src="https://via.placeholder.com/150" alt="Exemplo de imagem">
-
-        <h2>&lt;ul&gt; e &lt;li&gt;</h2>
-        <p>Cria listas não ordenadas.</p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-
-        <h2>&lt;ol&gt; e &lt;li&gt;</h2>
-        <p>Cria listas ordenadas (numeradas).</p>
-        <ol>
-            <li>Primeiro</li>
-            <li>Segundo</li>
-            <li>Terceiro</li>
-        </ol>
-
-        <h2>&lt;div&gt; e &lt;span&gt;</h2>
-        <p><code>&lt;div&gt;</code> cria uma seção de bloco, e <code>&lt;span&gt;</code> aplica estilo em linha.</p>
-        <div>Soy uma &lt;div&gt;</div>
-        <p>Texto com <span style="color:red;">parte em vermelho</span> usando &lt;span&gt;.</p>
-
-        <h2>&lt;table&gt;</h2>
-        <p>Usada para criar tabelas.</p>
-        <table border="1">
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td>João</td>
-                <td>30</td>
-            </tr>
-        </table>
-
-        <h2>&lt;form&gt;, &lt;input&gt;, &lt;button&gt;</h2>
-        <p>Usadas para criar formulários e capturar dados do usuário.</p>
-        <form>
-            <label>Nome: <input type="text" placeholder="Digite seu nome"></label><br>
-            <label>Email: <input type="email" placeholder="Digite seu email"></label><br>
-            <button type="submit">Enviar</button>
-        </form>
-
-        <h2>&lt;video&gt; e &lt;audio&gt;</h2>
-        <p>Permitem inserir vídeos e áudios diretamente na página.</p>
-        <video width="300" controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-        </video>
-        <br>
-        <audio controls>
-            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-            Seu navegador não suporta áudio.
-        </audio>
-
-        <h2>&lt;iframe&gt;</h2>
-        <p>Incorpora outra página da web dentro da sua.</p>
-        <iframe width="300" height="315" src="https://www.youtube.com/embed/YIYsf9AMZxE?si=mficcC7yD164JDKi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        <h2>&lt;footer&gt;</h2>
-        <p>Define o rodapé da página.</p>
         <footer>
-         Website Explicativo criado por Jean Rocha  © 2025 - Todos os direitos reservados.
+            <p>Criado por Jean Rocha © 2025 - Todos os Direitos Reservados </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" width="60"
+                alt="Símbolo HTML5">
         </footer>
 
     </main>

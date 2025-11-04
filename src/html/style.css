@@ -1,0 +1,49 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(212, 212, 212);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: rgb(241, 241, 241);
+    border-radius: 6px;
+    border-style:ridge;
+
+}
+
+.h1-header {
+    background-color:  rgb(241, 241, 241);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.btns {
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.btns:hover{
+    background-color:rgb(70, 69, 69);
+}
+
+div, section {
+    background-color:  rgb(241, 241, 241);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border-style:double
+}
+
+.none {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+}
