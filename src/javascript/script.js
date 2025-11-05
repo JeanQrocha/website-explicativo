@@ -13,30 +13,30 @@ function mostrarConsole() {
 
 
 function mostrarVariaveis() {
-  let variavelLet = "let é uma variavel que pode ser reatribuido";
+  const variavelLet = "let é uma variavel que pode ser reatribuido";
   const variavelConst = "const é uma variavel que nao pode ser reatribuido";
   document.getElementById("variaveisResult").innerText = `Let: ${variavelLet},  Const: ${variavelConst}`;
 }
 
 
 function mostrarTipos() {
-  let texto = "Olá";
-  let numero = 10;
-  let booleano = true;
+  const texto = "Olá";
+  const numero = 10;
+  const booleano = true;
   document.getElementById("tiposResult").innerText =
     `Texto: "${texto}" (${typeof texto}), Número: ${numero} (${typeof numero}), Booleano: ${booleano} (${typeof booleano})`;
 }
 
 
 function verificarIdade() {
-  let idade = 18;
-  let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
+  const idade = 18;
+  const resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
   document.getElementById("condicionalResult").innerText = resultado;
 }
 
 
 function mostrarLoop() {
-  let resultado = "";
+  const resultado = "";
   for (let i = 1; i <= 5; i++) {
     resultado += i + " ";
   }
@@ -47,7 +47,7 @@ function executarFuncao() {
   function saudacao(nome) {
     return "Olá, " + nome + "!";
   }
-  let texto = saudacao("Jean");
+  const texto = saudacao("Jean");
   document.getElementById("funcaoResult").innerText = texto;
 }
 
