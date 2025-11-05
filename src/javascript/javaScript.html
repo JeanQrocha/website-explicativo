@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principais Tags HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
 </head>
 <body>
+  <header>
+    <h1>JavaScript</h1>
+    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="icone-js" width="100">
+    <a class="btns" href="../index.html">Voltar</a>
+  </header>
 
-    <header>
-        
-    </header>
+  <p class="css">
+    JavaScript é uma linguagem de programação usada para tornar páginas web interativas. 
+    Ela permite manipular elementos do HTML, responder a ações do usuário e criar aplicações dinâmicas no navegador.
+  </p>
 
-    <hr>
+  <section>
+    <h2>alert()</h2>
+    <p>Exibe uma mensagem em uma janela de alerta.</p>
+    <code>alert("Olá, mundo!");</code><br>
+    <button onclick="mostrarAlerta()">Executar</button>
+    <p id="alertResult"></p>
+  </section>
 
-   
+  <section>
+    <h2>console.log()</h2>
+    <p>Mostra mensagens no console do navegador (usando inspecionar no navegador...).</p>
+    <code>console.log("Mensagem no console");</code><br>
+    <button onclick="mostrarConsole()">Executar</button>
+    <p id="consoleResult"></p>
+  </section>
 
-</body>
-</html>
+  <section>
+    <h2>Variáveis</h2>
+    <p>Declaramos variáveis com <code>var</code>, <code>let</code> ou <code>const</code>.</p>
+    <code>let nome = "Jean";<br>const idade = 25;</code><br>
+    <button onclick="mostrarVariaveis()">Executar</button>
+    <p id="variaveisResult"></p>
+  </section>
+
+  <section>
+    <h2>Tipos de Dados</h2>
+    <p>Principais tipos: string, number, boolean, object.</p>
+    <code>
+      let texto = "Olá";<br>
+      let numero = 10;<br>
+      let booleano = true;
+    </code><br>
+    <button onclick="mostrarTipos()">Executar</button>
+    <p id="tiposResult"></p>
+  </s

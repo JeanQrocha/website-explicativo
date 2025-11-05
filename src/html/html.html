@@ -10,11 +10,15 @@
 
 <body>
     <header>
-        <h1 class="">HTML</h1>
+        <div class="div-header">
+            <h1 class="">HTML</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" width="60"
+                alt="Símbolo HTML5">
+        </div>
         <a class="btns" href="../index.html">Voltar</a>
     </header>
     <main>
-        <div>
+        <section>
             <h2>significado de HTML</h2>
             <p> → HyperText Markup Language (Linguagem de Marcação de Hypertexto).</p>
             <li class="none">
@@ -39,13 +43,12 @@
 
             <img src="../img/tagsExemplo.png" alt="exemplo de tags">
 
-        </div>
-        <div id="tags">
-            <h1>Principais Tags HTML</h1>
-
+        </section>
+        <section id="tags">
+            <div class="html">
+                <h1>Principais Tags HTML</h1>
+            </div>
             <p>Aqui vou mostrar algumas tags importantes do HTML, com explicações e exemplos práticos.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="100"
-                alt="Logo HTML5">
 
             <h2>&lt;html&gt;</h2>
             <p>É a tag raiz que envolve toda a página HTML.</p>
@@ -58,7 +61,7 @@
 
             <h2>&lt;body&gt;</h2>
             <p>Contém todo o conteúdo visível da página, como textos, imagens e links.</p>
-
+            <hr>
             <nav>
                 <p><strong>Exemplo de Navegação:</strong></p>
                 <a href="#textos">Textos</a> |
@@ -68,9 +71,9 @@
                 <a href="#formulários">Formulários</a> |
                 <a href="#semantica">Semântica</a>
             </nav>
-        </div>
+        </section>
 
-        
+
         <main>
             <section id="textos">
                 <h2>1. Tags de Texto</h2>
@@ -92,7 +95,8 @@
 
                 <h3>&lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;mark&gt;</h3>
                 <p><strong>strong</strong> dá ênfase forte, <em>em</em> dá ênfase leve, <b>b</b> deixa em negrito,
-                    <i>i</i> em itálico, <u>u</u> sublinha, e <mark>mark</mark> destaca com marca-texto.</p>
+                    <i>i</i> em itálico, <u>u</u> sublinha, e <mark>mark</mark> destaca com marca-texto.
+                </p>
 
                 <h3>&lt;small&gt;, &lt;sub&gt;, &lt;sup&gt;</h3>
                 <p><small>Texto menor com &lt;small&gt;</small>, fórmula H<sub>2</sub>O e expoente 10<sup>2</sup> = 100.
@@ -101,7 +105,6 @@
                 <h3>&lt;br&gt; e &lt;hr&gt;</h3>
                 <p>O &lt;br&gt; quebra a linha,<br>como este exemplo.<br>O &lt;hr&gt; cria uma linha horizontal abaixo.
                 </p>
-                <hr>
 
                 <h3>&lt;blockquote&gt; e &lt;pre&gt;</h3>
                 <p><strong>blockquote</strong> exibe uma citação:</p>
@@ -117,7 +120,6 @@
                 <p>Usada para abreviações. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
             </section>
 
-            <hr>
 
             <section id="listas">
                 <h2>2. Listas</h2>
@@ -139,7 +141,6 @@
                 </ol>
             </section>
 
-            <hr>
 
             <section id="mídia">
                 <h2>3. Tags de Mídia</h2>
@@ -164,11 +165,13 @@
 
                 <h3>&lt;iframe&gt;</h3>
                 <p>Incorpora outra página da web:</p>
-                
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/YIYsf9AMZxE?si=B87xzRjg1hKZXear" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/YIYsf9AMZxE?si=B87xzRjg1hKZXear"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
-            <hr>
 
             <section id="tabelas">
                 <h2>4. Tabelas</h2>
@@ -193,7 +196,6 @@
                 </table>
             </section>
 
-            <hr>
 
             <section id="formulários">
                 <h2>5. Formulários</h2>
@@ -220,7 +222,6 @@
                 </form>
             </section>
 
-            <hr>
 
             <section id="semantica">
                 <h2>6. Tags Semânticas</h2>
@@ -251,12 +252,9 @@
             </section>
         </main>
 
-        <hr>
 
         <footer>
             <p>Criado por Jean Rocha © 2025 - Todos os Direitos Reservados </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" width="60"
-                alt="Símbolo HTML5">
         </footer>
 
     </main>

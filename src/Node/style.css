@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #61A60E;
+    padding: 20px;
+    border-bottom: 4px solid #000;
+}
+
+.btns {
+    text-decoration: none;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.btns:hover {
+    background-color: rgb(70, 69, 69);
+}
+
+p {
+    margin:20px 350px;
+}

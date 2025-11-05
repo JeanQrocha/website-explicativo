@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>CSS</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="div-header">
+      <h1>CSS (Cascading Style Sheets)</h1>
+      <img src="https://images.icon-icons.com/844/PNG/512/CSS3_icon-icons.com_67069.png" alt="icone-css" width="100">
+    </div>
+    <a class="btns" href="../index.html">Voltar</a>
+
+  </header>
+  <p class="css">CSS (Cascading Style Sheets) é uma linguagem de folha de estilo usada para descrever a aparência de
+    documentos
+    escritos em linguagens de marcação como o HTML. Ele permite estilizar elementos, separando o conteúdo (HTML) da sua
+    apresentação visual. Com o CSS, é possível controlar cores, fontes, layout, fundos, animações e transições para
+    criar sites visualmente atraentes e responsivos.
+    O que é: <strong>CSS (Cascading Style Sheets)</strong> é a linguagem que estiliza páginas da web.
+    Função principal: Separa o conteúdo estrutural de uma página (HTML) de sua apresentação visual. O HTML é o
+    esqueleto, enquanto o CSS é o que dá cor, estilo e aparência ao esqueleto..</p>
+
+  <section>
+    <h2>color</h2>
+    <p>
+      p { <br>
+      color: #1e88e5 <br>
+      }
+    </p>
+
+    <p>Resultado:</p>
+    <div>
+      <p style="color:#1e88e5"> TEXTO AZUL </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>background-color</h2>
+    <p> div { <br>
+      background-color: #e3f2fd; <br>
+      padding:12px;
+      }</p>
+    <p>Resultado:</p>
+    <div>
+      <div class='bg-ex'>FUNDO AZUL CLARINHO</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>font-size</h2>
+    <p> .font { <br>
+      font-size: 50px;
+      }</p>
+
+    <div>
+      <p class='fs-ex'>texto maior</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>font-family</h2>
+    <p>.font { <br>
+      font-family: "Momo Signature", cursive;<br>
+      font-weight: 400;<br>
+      font-style: normal; <br>
+      }</p>
+    <div>
+      <p class='ff-ex'>fonte diferente</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>font-weight</h2>
+    <p>.font { <br>
+      font-weight:700;
+      }</p>
+
+    <div>
+      <p class='fw-ex'>mais grosso</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>text-align</h2>
+    <p>.texto { <br>
+      text-align: center;
+      }
+    </p>
+    <p>Resultado:</p>
+    <div>
+      <div class='ta-ex'>
+        <p>TEXTO CENTRALIZADO</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>text-decoration</h2>
+    <p> .texto { <br>
+      text-decoration: underline;
+      }</p>
+
+    <p>Resultado:</p>
+    <div>
+      <a class='td-ex' href='#'>link sublinhado</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>border</h2>
+    <p> .borda {<br>
+      border: 2px solid #1565c0;
+      }</p>
+
+    <p>Resultado:</p>
+    <div>
+      <div class='bd-ex'>borda azul</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>border-radius</h2>
+    <p> .borda {<br>
+      border: 2px solid #ccc;<br>
+      border-radius: 12px;<br>
+      padding: 10px;<br>
+
+      }</p>
+    <p>Resultado:</p>
+    <div>
+      <div class='br-ex'>cantos arredondados</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>margin</h2>
+    <p> .borda {<br>
+      margin: 20px 0;<br>
+      border: 2px solid #999;<br>
+      padding: 8px;<br>
+
+      }</p>
+    <p>Resultado:</p>
+    <div>
+      <div class='mg-ex'>margem (espaço acima/baixo)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>padding</h2>
+    <p> .borda {<br>
+      border: 2px solid #ddd;<br>
+      padding: 20px;<br>
+
+      }</p>
+    <p>Resultado:</p>
+    <div>
+      <div class='pd-ex'>espaço interno maior</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>width-height</h2>
+    <p>Imagem do código CSS:</p>
+    <p> .borda {<br>
+      width: 220px;<br>
+      border: 1px solid #bbb;<br>
+      height: 80px;<br>
+
+      }</p>
+    <p>Resultado:</p>
+    <div>
+      <div class='wh-ex'>largura/altura fixas</div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <h2>position</h2>
+    <p>container {<br>
+      position: absolute;<br>
+      right: 10px;<br>
+      top: 10px;<br>
+      border: 1px solid #aaa;<br>
+      padding:6px <br>
+
+      }</p>
+
+    <p>Resultado:</p>
+    <div>
+      <div class='pos-container'>
+        <div class='pos-ex'>position absolute</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>flex</h2>
+
+    <p>
+      .flex-container {<br>
+      display: flex; <br>
+      gap: 8px <br>
+      }
+      <br>
+      .div-flex {<br>
+      border: 1px solid #aaa;<br>
+      padding: 8px <br>}
+    </p>
+
+    <p>Resultado:</p>
+    <div>
+      <div class='flex-container'>
+        <div class='div-flex'>1</div>
+        <div class='div-flex'>2</div>
+        <div class='div-flex'>3</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>grid</h2>
+    <p>.grid-container {<br>
+      display: grid; <br>
+      grid-template-columns: 1fr 1fr; <br>
+      gap: 8px; <br>
+      }
+      <br>
+      .div-grid {<br>
+      padding: 8px; <br>
+      border: 1px solid #ddd;<br>
+      }
+    </p>
+
+    <p>Resultado:</p>
+    <div>
+      <div class='grid-container'>
+        <div class='div-grid'>A</div>
+        <div class='div-grid'>B</div>
+        <div class='div-grid'>C</div>
+        <div class='div-grid'>D</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>box-shadow</h2>
+    <p>div.bs-ex {<br>
+      box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.12); <br>
+      padding: 10px;<br>
+      }</p>
+
+    <p>Resultado:</p>
+    <div>
+      <div class='bs-ex'>sombra</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>opacity</h2>
+    <p>div.op-ex { <br>
+      opacity: 0.6; <br>
+      padding: 8px; <br>
+      border: 1px solid #ccc; <br>
+      }</p>
+
+    <p>Resultado:</p>
+    <div>
+      <div class='op-ex'>opacidade 60%</div>
+    </div>
+  </section>
+  <section>
+    <h2>transition</h2>
+    <p>button.tr-ex { <br>
+      transition: background-color 0.3s ease;<br>
+      } <br>
+
+      button.tr-ex:hover { <br>
+      background-color: #1565c0; <br>
+      color: white; <br>
+      }</p>
+
+    <p>Resultado:</p>
+    <div>
+      <button class='tr-ex'>passe o mouse</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>hover</h2>
+    <p>button.hv-ex { <br>
+      background-color: #f1f1f1; <br>
+      border: 1px solid #bbb; <br>
+      padding: 8px 12px; <br>
+      } <br>
+
+      button.hv-ex:hover { <br>
+      background-color: #1e88e5; <br>
+      color: white; <br>
+      }</p>
+
+    <div>
+      <button class='hv-ex'>botão hover</button>
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Node.js</h1>
+            <img src="../img/nodeJS.png" width="100" alt="" srcset="">
+            <img src="" alt="" srcset="">
+        </div>
+        <a class="btns" href="../index.html">Voltar</a>
+    </header>
+
+    <p>
+<br>
+        ===============================<br>
+        npm init<br>
+        npm i express jest<br>
+        npm i cross-env<br>
+        ================================<br>
+        colocar no json<br>
+<br>
+        "type": "module",<br>
+<br>
+        "dev": "node --watch ./src/index.js",<br>
+        "test": "cross-env TEST=true node --experimental-vm-modules node_modules/jest/bin/jest.js"<br>
+        ================================<br>
+        criar pasta<br>
+        src<br>
+        controller<br>
+        users.js<br>
+        router<br>
+        users.js<br>
+        service<br>
+        users.js<br>
+        index.js<br>
+<br>
+        criar os arquivos .js dentro de cada pasta com seus respequitivos nomes<br>
+        =================================<br>
+        comecar a construir os arquivo index.js<br>
+<br>
+        importar o express,<br>
+        declarar o express<br>
+        dzer que vai rodar com json,<br>
+<br>
+        import express from "express"<br>
+<br>
+        const app = express();<br>
+        app.use(express.json())<br>
+<br>
+        //rotas<br>
+<br>
+        const port = 3000<br>
+<br>
+        app.listen(port, () => {<br>
+        console.info("Servidor rodando na porta " + port)<br>
+        })<br>
+<br>
+        testar<br>
+        npm run dev<br>
+        ==================================<br>
+        constrir as rotas<br>
+<br>
+        import express from 'express'<br>
+        //importar controller<br>
+<br>
+        const router = express.Router()<br>
+<br>
+        //api/v1<br>
+        router.get('/users', (req, res) => {<br>
+        console.log('oi') //apenas para testar se a rota esta funcionando<br>
+        res.send()<br>
+        }) //pegar todos<br>
+        // router.get('/user/:index') //pegar um<br>
+        // router.post('/user') //cadastrar um<br>
+        // router.put('/user/:index') //alterar um<br>
+        // router.delete('/user/:index') //deletar um<br>
+<br>
+        export default router<br>
+<br>
+       <strong>**nao esquecer de exportar o router no index**</strong><br>
+<br>
+<br>
+        tesar com o postman se esta funcionando.<br>
+        =====================================<br>
+<br>
+        criar o controller<br>
+        criar um classe constroller<br>
+<br>
+<br>
+        class ControllerUser {<br>
+<br>
+        FindAll(req, res) {<br>
+        console.log("oi");<br>
+        res.send();<br>
+        }<br>
+        }<br>
+        export default new ControllerUser();<br>
+<br>
+        testar no postman se esta funcionando.<br>
+        *nao esquecer de importar o controller no router*<br>
+        ======================================<br>
+<br>
+        criar o service<br>
+        criar a classe Service'''<br>
+<br>
+        class ServiceUser {<br>
+        FindAll() {<br>
+        return ['oi', 'xau'] //apenas para teste, retorna array<br>
+        }<br>
+        }<br>
+        export default new ServiceUser()<br>
+<br>
+        <strong>**nao de esquecer de importar o service no controller**</strong><br>
+        declarar a funçao FindAll do service no controller e chamar ela no res.<br>
+<br>
+        testar no postman se esta funcinando.<br>
+        =========================================<br>
+        nao esquecer de colocar a tratatica de erro com Try catch no controller<br>
+        =========================================<br>
+<br>
+        copiar e colar para criar mais funcoes no controller e service<br>
+        depois é so criar as rotas no router e testar no postman.<br>
+        =========================================<br>
+        Criar o CRUD copiando e colando a primeira funcao<br>
+<br>
+<br>
+        class ServiceUser {<br>
+        FindAll() {<br>
+        return ["oi", "xau"]; //apenas para teste, retorna array<br>
+        }<br>
+<br>
+        FindOne() {<br>
+        return ["outra msg"]; //apenas para teste, retorna array<br>
+        }<br>
+        Create() {<br>
+        return ["Criado"]; //apenas para teste, retorna array<br>
+        }
+        Update() {<br>
+        return ["Update"]; //apenas para teste, retorna array<br>
+        }
+        Delete() {<br>
+        return ["Deletado"]; //apenas para teste, retorna array<br>
+        }
+        }<br>
+        export default new ServiceUser();<br>
+<br>
+        <strong>**nao esquecer de criar as rotas no router.**</strong><br>
+        testar todas as rotas no postman.<br>
+        ==========================================<br>
+        Criar uma pasta models para colocar o array de nome.<br>
+<br>
+        copiar as funcoes do Service e editar colocando o array e os parametros.<br>
+<br>
+        const nomes = new Array("Jão", "Marya", "Xuxa");<br>
+<br>
+        class ModelUser {<br>
+<br>
+        FindAll() {<br>
+        return nomes<br>
+        }<br>
+<br>
+        FindOne(index) { // se nao tem variavel dentro da função,entao é parametro, coloca dentro<br>
+        return nomes[index]<br>
+        }
+        Create(nome) {<br>
+        nomes.push(nome)<br>
+        }
+        Update(index, nome) {<br>
+        nomes[index] = nome<br>
+        }
+        Delete(index) {<br>
+        nomes.splice(index, 1)<br>
+        }
+        }
+<br>
+        export default new ModelUser()<br>
+<br>
+        ===========================================<br>
+<br>
+        Volta pro controller e edita os parametros e as requisicoes das funcoes.<br>
+<br>
+        import ServiceUser from "../service/users.js";<br>
+<br>
+        class ControllerUser {<br>
+        FindAll(_, res) { //se nao for usar o primeiro parametro, use '_'<br>
+        try {<br>
+        const resultado = ServiceUser.FindAll();<br>
+<br>
+        res.send(resultado);<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }
+        }
+<br>
+        FindOne(req, res) {<br>
+        try {<br>
+        const index = req.params.index<br>
+<br>
+        const resultado = ServiceUser.FindOne(index);<br>
+<br>
+        res.send(resultado);<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }<br>
+        }
+        Create(req, res) {<br>
+        try {<br>
+        const nome = req.body.nome //post e put usa body<br>
+        const resultado = ServiceUser.Create(nome);<br>
+<br>
+        res.send(resultado);<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }<br>
+        }<br>
+        Update(req, res) {<br>
+        try {<br>
+        const index = req.params.index<br>
+        const nome = req.body.nome<br>
+        const resultado = ServiceUser.Update(index, nome);<br>
+<br>
+        res.send(resultado);<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }
+        }<br>
+        Delete(req, res) {<br>
+        try {<br>
+        const index = req.params.index<br>
+        const resultado = ServiceUser.Delete(index);<br>
+<br>
+        res.send(resultado);<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }<br>
+        }<br>
+        }<br>
+        export default new ControllerUser();<br>
+<br>
+        ===========================================<br>
+<br>
+        voltar para o service<br>
+<br>
+        import ModelUser from '../model/users.js'<br>
+<br>
+        class ServiceUser {<br>
+        FindAll() {<br>
+        return ModelUser.FindAll()<br>
+        }
+<br>
+        FindOne(index) {<br>
+        //verificar se o index é valido<br>
+        return ModelUser.FindOne(index)<br>
+        }<br>
+        Create(nome) {<br>
+        return ModelUser.Create(nome)<br>
+        }
+        Update(index, nome) {<br>
+        //verificar se o index e o nome são validos<br>
+        return ModelUser.Update(index, nome)<br>
+        }
+        Delete(index) {<br>
+        return ModelUser.Delete(index)<br>
+        }
+        }<br>
+        export default new ServiceUser();<br>
+<br>
+<br>
+        =====================================<br>
+<br>
+        volte para o controller<br>
+<br>
+        import ServiceUser from "../service/users.js";<br>
+<br>
+        class ControllerUser {<br>
+        FindAll(_, res) { //se nao for usar o primeiro parametro, use '_'<br>
+        try {<br>
+        const nomes = ServiceUser.FindAll();<br>
+<br>
+        res.send({nomes});<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }<br>
+        }<br>
+<br>
+        FindOne(req, res) {<br>
+        try {
+        const index = req.params.index<br>
+<br>
+        const nome = ServiceUser.FindOne(index);<br>
+<br>
+        res.send({nome});<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }
+        }<br>
+        Create(req, res) {<br>
+        try {<br>
+        const nome = req.body.nome //post e put usa body<br>
+        ServiceUser.Create(nome);<br>
+<br>
+        res.status(201).send();<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }
+        }<br>
+        Update(req, res) {<br>
+        try {<br>
+        const index = req.params.index<br>
+        const nome = req.body.nome<br>
+        ServiceUser.Update(index, nome);<br>
+<br>
+        res.status(200).send();<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }
+        }<br>
+        Delete(req, res) {<br>
+        try {<br>
+        const index = req.params.index<br>
+        ServiceUser.Delete(index);<br>
+<br>
+        res.status(204).send();<br>
+        } catch (error) {<br>
+        res.status(500).send({ error: error.message });<br>
+        }<br>
+        }<br>
+        }<br>
+        export default new ControllerUser();<br>
+
+
+
+
+
+
+    </p>
+
+</body>
+
+</html>
